@@ -1,4 +1,7 @@
+from elementoNuevo import libro
 from menu import *
+from json import *
+
 
 def nuevoElemento():
     separador()
@@ -10,13 +13,8 @@ def nuevoElemento():
     3. Musica
     4. Regresar al Menu Principal"""
     print(opciones)
-    opNuevo = int(input("Selecciona una opción (1-4):"))
-    try:
-        return(opNuevo)
-    except Exception:
-        print("Opción inválida")
-
-    
+    opNuevo = int(input("Selecciona una opción (1-4): "))
+    return opNuevo
 
 def verElementos():
     separador()
@@ -123,7 +121,8 @@ def main():
     while True:
         if op == 1:
             print("")
-            nuevoElemento()
+            dato = nuevoElemento()
+            libro(dato)
         elif op == 2:
             print("")
             verElementos()

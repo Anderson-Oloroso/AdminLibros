@@ -1,18 +1,14 @@
-import json
-from main import nuevoElemento
+from json import *
 
-def libro():
+def libro(op):
     id = int(input("Id: "))
     titulo = input("Título del libro: ")
     autor = input("Autor: ")
     genero = input("Género: ")
 
-    
-op = nuevoElemento    
+    if op == 1:
+        with open("libros.json", "r") as f:
+            dato = load(f)
+            for _ in dato:
+                print(_)
 
-if op == 1:
-    with open("libros.json", "r") as f:
-        dato = json.load(f)
-        _ = 0
-        for _ in dato:
-            print(dato)
