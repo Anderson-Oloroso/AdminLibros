@@ -13,6 +13,6 @@ def opcionesMenu():
         8. Salir"""
     print(menu)
 
-def op():
+def opc():
     op = int(input("Selecciona una opción (1-8): "))
     return op
