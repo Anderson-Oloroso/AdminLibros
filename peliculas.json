@@ -1,8 +1,14 @@
 [
     {
-        "id": 1, 
+        "Id": 1,
         "Titulo": "Jurasic World",
         "Director": "Vinisius",
+        "Genero": "Ciencia Ficcion"
+    },
+    {
+        "Id": 2,
+        "Titulo": "Ready Player One",
+        "Director": "Saber",
         "Genero": "Ciencia Ficcion"
     }
 ]

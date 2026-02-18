@@ -1,8 +1,14 @@
 [
     {
-       "id": 1, 
-       "Titulo": "Dueño del mundo",
-       "Autor": "Julio Verne",
-       "Genero": "Ciencia Ficcion"
+        "Id": 1,
+        "Titulo": "Due\u00f1o del mundo",
+        "Autor": "Julio Verne",
+        "Genero": "Ciencia Ficcion"
+    },
+    {
+        "Id": 4,
+        "Titulo": "El conde",
+        "Autor": "Alejandro",
+        "Genero": "Venganza"
     }
 ]
