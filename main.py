@@ -63,6 +63,14 @@ def buscarElemento():
     opBuscar = int(input("Selecciona una opción (1-4):"))
     if opBuscar == 1:
         busTitulo()
+    elif opBuscar == 2:
+        busADA()
+    elif opBuscar == 3:
+        busGen()
+    elif opBuscar == 4:
+        main()
+    else:
+        print("Opcion inválida")
 
 def editarElemento():
     separador()
