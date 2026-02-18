@@ -1,18 +1,15 @@
 [
     {
-        "Id": 1,
         "Titulo": "Due\u00f1o del mundo",
         "Autor": "Julio Verne",
         "Genero": "Ciencia Ficcion"
     },
     {
-        "Id": 4,
-        "Titulo": "El conde",
+        "Titulo": "el conde de montecristo",
         "Autor": "Alejandro",
         "Genero": "Venganza"
     },
     {
-        "Id": 4,
         "Titulo": "Luna",
         "Autor": "Gram",
         "Genero": "Ficcion"

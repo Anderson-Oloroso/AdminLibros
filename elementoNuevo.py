@@ -1,13 +1,11 @@
 import json
 
 def addLibro():
-    id = int(input("Id: "))
     titulo = input("Título del libro: ")
     autor = input("Autor: ")
     genero = input("Género: ")
 
     nuevoLibro = {
-        "Id": id,
         "Titulo": titulo,
         "Autor": autor,
         "Genero": genero
@@ -31,13 +29,11 @@ def addLibro():
                 dato = []
 
 def addPeli():
-    id = int(input("Id: "))
     titulo = input("Título de la pelicula: ")
     director = input("Director: ")
     genero = input("Género: ")
 
     nuevoLibro = {
-        "Id": id,
         "Titulo": titulo,
         "Director": director,
         "Genero": genero
@@ -60,13 +56,11 @@ def addPeli():
                 dato = []
 
 def addMusic():
-    id = int(input("Id: "))
     titulo = input("Título de la musica: ")
     artista = input("Artista: ")
     genero = input("Género: ")
 
     nuevoLibro = {
-        "Id": id,
         "Titulo": titulo,
         "Artista": artista,
         "Genero": genero
