@@ -1,6 +1,7 @@
 from menu import *
 from json import *
 from elementoNuevo import *
+from verElemento import *
 
 
 def nuevoElemento():
@@ -14,12 +15,15 @@ def nuevoElemento():
     4. Regresar al Menu Principal"""
     print(opciones)
     opNuevo = int(input("Selecciona una opción (1-4): "))
+
+    separador()
+    print("Agregar un nuevo elemento\n")
     if opNuevo == 1:
-        addLibro(opNuevo)
+        addLibro()
     elif opNuevo == 2:
-        addPeli(opNuevo)
+        addPeli()
     elif opNuevo == 3:
-        addMusic(opNuevo)
+        addMusic()
     elif opNuevo == 4:
         main()
 
@@ -34,10 +38,16 @@ def verElementos():
     4. Regresar al Menu Principal"""
     print(opciones)
     opVer = int(input("Selecciona una opción (1-4):"))
-    try:
-        return(opVer)
-    except Exception:
-        print("Opción inválida")
+    separador()
+    print("Ver todos los registros\n")
+    if opVer == 1:
+        verLibro()
+    elif opVer == 2:
+        verPeli()
+    elif opVer == 3:
+        verMusic()
+    elif opVer == 4:
+        main()
 
 def buscarElemento():
     separador()

@@ -1,6 +1,6 @@
 import json
 
-def addLibro(op):
+def addLibro():
     id = int(input("Id: "))
     titulo = input("Título del libro: ")
     autor = input("Autor: ")
@@ -30,7 +30,7 @@ def addLibro(op):
             finally:
                 dato = []
 
-def addPeli(op):
+def addPeli():
     id = int(input("Id: "))
     titulo = input("Título de la pelicula: ")
     director = input("Director: ")
@@ -59,7 +59,7 @@ def addPeli(op):
             finally:
                 dato = []
 
-def addMusic(op):
+def addMusic():
     id = int(input("Id: "))
     titulo = input("Título de la musica: ")
     artista = input("Artista: ")
