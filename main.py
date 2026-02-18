@@ -2,7 +2,8 @@ from menu import *
 from json import *
 from elementoNuevo import *
 from verElemento import *
-
+from editarElemento import *
+from buscarElemento import *
 
 def nuevoElemento():
     separador()
@@ -60,10 +61,8 @@ def buscarElemento():
     4. Regresar al Menu Principal"""
     print(opciones)
     opBuscar = int(input("Selecciona una opción (1-4):"))
-    try:
-        return(opBuscar)
-    except Exception:
-        print("Opción inválida")
+    if opBuscar == 1:
+        busTitulo()
 
 def editarElemento():
     separador()
@@ -77,10 +76,8 @@ def editarElemento():
     5. Regresar al Menu Principal"""
     print(opciones)
     opEditar= int(input("Selecciona una opción (1-5):"))
-    try:
-        return(opEditar)
-    except Exception:
-        print("Opción inválida")
+    if opEditar == 1:
+        ediTitulo()
 
 def eliminarElemento():
     separador()
