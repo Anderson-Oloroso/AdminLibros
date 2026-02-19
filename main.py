@@ -83,9 +83,11 @@ def editarElemento():
     4. Editar Valoracion
     5. Regresar al Menu Principal"""
     print(opciones)
-    opEditar= int(input("Selecciona una opción (1-5):"))
+    opEditar= int(input("Selecciona una opción (1-5): "))
+    
     if opEditar == 1:
         ediTitulo()
+
 
 def eliminarElemento():
     separador()
