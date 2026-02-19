@@ -1,12 +1,19 @@
 [
     {
-        "Titulo": "",
-        "Artista": "Errec\u00e9",
-        "Genero": "Rap"
+        "Titulo": "Due\u00f1o del mundo",
+        "Autor": "Julio Verne",
+        "Genero": "Ciencia Ficcion",
+        "Valoracion:": 9
     },
     {
-        "Titulo": "",
-        "Artista": "Rafa Espino",
-        "Genero": "Rap"
+        "Titulo": "El Conde de Montecristo",
+        "Autor": "Alejandro",
+        "Genero": "Venganza"
+    },
+    {
+        "Titulo": "Luna",
+        "Autor": "Gram",
+        "Genero": "Novela",
+        "Valoracion:": 9
     }
 ]

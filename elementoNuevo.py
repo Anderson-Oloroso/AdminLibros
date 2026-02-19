@@ -4,11 +4,13 @@ def addLibro():
     titulo = input("Título del libro: ")
     autor = input("Autor: ")
     genero = input("Género: ")
+    val = int(input("Valoracion"))
 
     nuevoLibro = {
         "Titulo": titulo,
         "Autor": autor,
-        "Genero": genero
+        "Genero": genero,
+        "Valoracion": val
     }
     with open("libros.json", "r") as file:
         dato = json.load(file)
@@ -32,11 +34,13 @@ def addPeli():
     titulo = input("Título de la pelicula: ")
     director = input("Director: ")
     genero = input("Género: ")
+    val = int(input("Valoracion"))
 
     nuevoLibro = {
         "Titulo": titulo,
         "Director": director,
-        "Genero": genero
+        "Genero": genero,
+        "Valoracion": val
     }
     with open("peliculas.json", "r") as file:
         dato = json.load(file)
@@ -59,11 +63,13 @@ def addMusic():
     titulo = input("Título de la musica: ")
     artista = input("Artista: ")
     genero = input("Género: ")
+    val = int(input("Valoracion"))
 
     nuevoLibro = {
         "Titulo": titulo,
         "Artista": artista,
-        "Genero": genero
+        "Genero": genero,
+        "Valoracion": val
     }
     with open("musicas.json", "r") as file:
         dato = json.load(file)

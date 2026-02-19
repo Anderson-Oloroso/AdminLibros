@@ -72,23 +72,6 @@ def buscarElemento():
     else:
         print("Opcion inválida")
 
-def editarElemento():
-    separador()
-    print("       Editar Elemento")
-    separador()
-    print("¿Qué tipo de cambio deseas realizar?")
-    opciones = """    1. Editar Titulo
-    2. Editar Autor/Director/Artista
-    3. Editar Genero
-    4. Editar Valoracion
-    5. Regresar al Menu Principal"""
-    print(opciones)
-    opEditar= int(input("Selecciona una opción (1-5): "))
-    
-    if opEditar == 1:
-        ediTitulo()
-
-
 def eliminarElemento():
     separador()
     print("       Eliminar Elemento")

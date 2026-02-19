@@ -1,17 +1,20 @@
 [
     {
         "Titulo": "Mundo Jurasico",
-        "Director": "Vinisius",
-        "Genero": "Ciencia Ficcion"
+        "Director": "Vin Diesel",
+        "Genero": "Ciencia Ficcion",
+        "Valoracion:": 9
     },
     {
         "Titulo": "Ready Player One",
         "Director": "Saber",
-        "Genero": "Ciencia Ficcion"
+        "Genero": "Ciencia Ficcion",
+        "Valoracion:": 9
     },
     {
         "Titulo": "Oblivion",
         "Director": "DR",
-        "Genero": "Ficcion"
+        "Genero": "Ficcion",
+        "Valoracion:": 9
     }
 ]
