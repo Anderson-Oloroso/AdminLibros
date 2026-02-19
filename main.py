@@ -5,6 +5,7 @@ from verElemento import *
 from editarElemento import *
 from buscarElemento import *
 
+
 def nuevoElemento():
     separador()
     print("       Añadir nuevo Elemento")
