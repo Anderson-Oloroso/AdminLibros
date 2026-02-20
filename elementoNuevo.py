@@ -1,33 +1,15 @@
 import json
 from menu import separador
 
-def encontrar(id):
-    with open("libros.json", "r") as f:
-        datos = json.load(f)
-
-    with open("peliculas.json", "r") as f:
-        datos = json.load(f)
-
-    with open("musicas.json", "r") as f:
-        datos = json.load(f)
-
-    for dato in datos:
-        if id == dato['Id']:
-            print("Error. El id ya existe, ingrese un id diferente")
-            separador()
-        else:
-            return id
-    
-
-def addLibro(id):
-    
+def addLibro():
+    separador
+    print("Agregar un nuevo libro")
     titulo = input("Título del libro: ")
     autor = input("Autor: ")
     genero = input("Género: ")
     val = float(input("Valoracion"))
 
     nuevoLibro = {
-        "Id": id,
         "Titulo": titulo,
         "Autor": autor,
         "Genero": genero,
@@ -52,15 +34,14 @@ def addLibro(id):
                 dato = []
 
 def addPeli():
-    id = int(input("Id: "))
-    encontrar(id)
+    separador()
+    print("Agregar nueva pelicula")
     titulo = input("Título de la pelicula: ")
     director = input("Director: ")
     genero = input("Género: ")
     val = int(input("Valoracion"))
     
     nuevoLibro = {
-        "Id": id,
         "Titulo": titulo,
         "Director": director,
         "Genero": genero,
@@ -84,15 +65,14 @@ def addPeli():
                 dato = []
 
 def addMusic():
-    id = int(input("Id: "))
-    encontrar(id)
+    separador()
+    print("Agregar nueva musica")
     titulo = input("Título de la musica: ")
     artista = input("Artista: ")
     genero = input("Género: ")
     val = int(input("Valoracion"))
 
     nuevoLibro = {
-        "Id": id,
         "Titulo": titulo,
         "Artista": artista,
         "Genero": genero,

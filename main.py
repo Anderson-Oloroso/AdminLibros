@@ -4,6 +4,7 @@ from elementoNuevo import *
 from verElemento import *
 from editarElemento import *
 from buscarElemento import *
+from eliminarElemento import *
 
 
 def nuevoElemento():
@@ -83,9 +84,12 @@ def eliminarElemento():
     3. Regresar al Menu Principal"""
     print(opciones)
     opEliminar = int(input("Selecciona una opción (1-3):"))
-    try:
-        return(opEliminar)
-    except Exception:
+    if opEliminar == 1:
+        delNombre()
+    
+    elif opEliminar == 3:
+        main()
+    else:
         print("Opción inválida")
 
 def elementoXcategoria():
@@ -114,10 +118,7 @@ def guardarCargar():
     3. Regresar al Menu Principal"""
     print(opciones)
     opCategoria = int(input("Selecciona una opción (1-3):"))
-    try:
-        return(opCategoria)
-    except Exception:
-        print("Opción inválida")
+    
 
 def main():
     separador()

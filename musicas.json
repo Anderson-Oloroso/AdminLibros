@@ -1,16 +1,8 @@
 [
     {
-        "Id": 1,
         "Titulo": "Volar",
         "Artista": "Errec\u00e9",
-        "Genero": "Hip Hop", 
+        "Genero": "Hip Hop",
         "Valoracion:": 9
-    },
-    {
-        "Id": 2,
-        "Titulo": "Seremos",
-        "Artista": "Rafa Espino",
-        "Genero": "Rap", 
-        "Valoracion:":9
     }
 ]
