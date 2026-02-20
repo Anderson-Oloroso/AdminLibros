@@ -5,7 +5,7 @@ def busTitulo():
     separador()
     print("Buscar por titulo")
     titulo = input("Título: ").lower().strip()
-    existe = True
+
     with open("libros.json", "r") as f:
         datos = json.load(f)
     
@@ -13,7 +13,6 @@ def busTitulo():
         if titulo in dato['Titulo'].lower():
             
             print(f"\nTitulo: {dato['Titulo']}\nAutor: {dato['Autor']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
-            existe 
 
     with open("peliculas.json", "r") as f:
         datos = json.load(f)
@@ -21,30 +20,24 @@ def busTitulo():
     for dato in datos:
         if titulo in dato['Titulo'].lower():
             print(f"\nTitulo: {dato['Titulo']}\nDirector: {dato['Director']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
-            existe
-    
+
     with open("musicas.json", "r") as f:
         datos = json.load(f)
     
     for dato in datos:
         if titulo in dato['Titulo'].lower():
             print(f"\nTitulo: {dato['Titulo']}\nArtista: {dato['Artista']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
-            existe
-    if not existe:
-        print("No hay coincidencias")
 
 def busADA():
     separador()
     print("Buscar por Artista/Director/Autor")
     nombre = input("Nombre: ").lower().strip()
-    existe = True
     with open("libros.json", "r") as f:
         datos = json.load(f)
     
     for dato in datos:
         if nombre in dato['Autor'].lower():
             print(f"\nTitulo: {dato['Titulo']}\nAutor: {dato['Autor']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
-            existe
 
     with open("musicas.json", "r") as f:
         datos = json.load(f)
@@ -52,7 +45,6 @@ def busADA():
     for dato in datos:
         if nombre in dato['Artista'].lower():
             print(f"\nTitulo: {dato['Titulo']}\nAutor: {dato['Artista']}\nGénero: {dato['Genero']}\nValoracion:{dato['Valoracion']}\n")
-            existe
 
     with open("peliculas.json", "r") as f:
         datos = json.load(f)
@@ -60,23 +52,17 @@ def busADA():
     for dato in datos:
         if nombre in dato['Director'].lower():
             print(f"\nTitulo: {dato['Titulo']}\nAutor: {dato['Director']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
-            existe
-    
-    if not existe:
-        print("No hay coincidencias")
     
 def busGen():
     separador()
     print("Buscar por Genero")
     genero = input("Género: ").lower().strip()
-    existe = True
     with open("libros.json", "r") as f:
         datos = json.load(f)
     
     for dato in datos:
         if genero in dato['Genero'].lower():
             print(f"\nTitulo: {dato['Titulo']}\nAutor: {dato['Autor']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
-            existe
 
     with open("musicas.json", "r") as f:
         datos = json.load(f)
@@ -84,7 +70,6 @@ def busGen():
     for dato in datos:
         if genero in dato['Genero'].lower():
             print(f"\nTitulo: {dato['Titulo']}\nAutor: {dato['Artista']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
-            existe
 
     with open("peliculas.json", "r") as f:
         datos = json.load(f)
@@ -92,10 +77,5 @@ def busGen():
     for dato in datos:
         if genero in dato['Genero'].lower():
             print(f"\nTitulo: {dato['Titulo']}\nAutor: {dato['Director']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
-            existe
-
-    if not existe:
-        print("No hay coincidencias")
-            
             
             

@@ -5,7 +5,7 @@ from verElemento import *
 from editarElemento import *
 from buscarElemento import *
 from eliminarElemento import *
-from elementosXcategoria import *
+from Xcategoria import *
 
 def nuevoElemento():
     separador()
@@ -120,8 +120,15 @@ def elementoXcategoria():
     try:
         if opCategoria == 1:
             catLibro()
-    except Exception:
-        print("Opción inválida")
+        elif opCategoria == 2:
+            catMusic()
+        elif opCategoria == 3:
+            catPeli()
+        else:
+            print("Opcion invalida")
+            
+    except Exception as e:
+        print("Error: ", e)
     
 def main():
     while True:

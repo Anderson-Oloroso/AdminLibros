@@ -7,7 +7,7 @@ def addLibro():
     titulo = input("Título del libro: ")
     autor = input("Autor: ")
     genero = input("Género: ")
-    val = float(input("Valoracion"))
+    val = float(input("Valoracion: "))
 
     nuevoLibro = {
         "Titulo": titulo,

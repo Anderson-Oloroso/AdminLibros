@@ -10,5 +10,11 @@
         "Autor": "Gram",
         "Genero": "Novela",
         "Valoracion:": 9
+    },
+    {
+        "Titulo": "El faro del fin del mundo",
+        "Autor": "Julio Verne",
+        "Genero": "Ficcion",
+        "Valoracion": 9.0
     }
 ]
