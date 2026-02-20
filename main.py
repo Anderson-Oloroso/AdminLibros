@@ -5,7 +5,7 @@ from verElemento import *
 from editarElemento import *
 from buscarElemento import *
 from eliminarElemento import *
-
+from elementosXcategoria import *
 
 def nuevoElemento():
     separador()
@@ -118,7 +118,8 @@ def elementoXcategoria():
     print(opciones)
     opCategoria = int(input("Selecciona una opción (1-4):"))
     try:
-        return(opCategoria)
+        if opCategoria == 1:
+            catLibro()
     except Exception:
         print("Opción inválida")
     
