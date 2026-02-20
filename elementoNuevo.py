@@ -23,15 +23,10 @@ def addLibro():
     with open("libros.json", "w") as f:
             try:
                 json.dump(dato, f, indent=4)
-                print("Libro agregado correctamente")
-            except json.JSONDecodeError as e:
-                print("Error JSON: ", e)
-            except ValueError as f:
-                print(f)
+            except Exception as e:
+                 print("Error: ", e)
             else:
                 print("Pelicula agregada correctamente")
-            finally:
-                dato = []
 
 def addPeli():
     separador()
@@ -39,7 +34,7 @@ def addPeli():
     titulo = input("Título de la pelicula: ")
     director = input("Director: ")
     genero = input("Género: ")
-    val = int(input("Valoracion"))
+    val = int(input("Valoracion: "))
     
     nuevoLibro = {
         "Titulo": titulo,
@@ -55,14 +50,10 @@ def addPeli():
     with open("peliculas.json", "w") as f:
             try:
                 json.dump(dato, f, indent=4)
-            except json.JSONDecodeError as e:
-                print("Error JSON: ", e)
-            except ValueError as f:
-                print(f)
+            except Exception as e:
+                 print("Error: ", e)
             else:
                 print("Pelicula agregada correctamente")
-            finally:
-                dato = []
 
 def addMusic():
     separador()
@@ -70,7 +61,7 @@ def addMusic():
     titulo = input("Título de la musica: ")
     artista = input("Artista: ")
     genero = input("Género: ")
-    val = int(input("Valoracion"))
+    val = int(input("Valoracion: "))
 
     nuevoLibro = {
         "Titulo": titulo,
@@ -86,12 +77,8 @@ def addMusic():
     with open("musicas.json", "w") as f:
             try:
                 json.dump(dato, f, indent=4)
-            except json.JSONDecodeError as e:
-                print("Error JSON: ", e)
-            except ValueError as f:
-                print(f)
+            except Exception as e:
+                 print("Error: ", e)
             else:
-                print("Musica agregada correctamente")
-            finally:
-                dato = []
+                print("Pelicula agregada correctamente")
 

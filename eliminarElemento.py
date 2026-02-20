@@ -1,6 +1,6 @@
 import json
 def delNombre():
-    titulo = input("Id: ").lower().strip()
+    titulo = input("Titulo: ").lower().strip()
     encontrado = True
     try:
         i = 0

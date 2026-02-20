@@ -21,14 +21,19 @@ def nuevoElemento():
 
     separador()
     print("Agregar un nuevo elemento\n")
-    if opNuevo == 1:
-        addLibro()
-    elif opNuevo == 2:
-        addPeli()
-    elif opNuevo == 3:
-        addMusic()
-    elif opNuevo == 4:
-        main()
+    try: 
+        if opNuevo == 1:
+            addLibro()
+        elif opNuevo == 2:
+            addPeli()
+        elif opNuevo == 3:
+            addMusic()
+        elif opNuevo == 4:
+            main()
+        else:
+            print("Opcion invalida")
+    except Exception as e:
+        print("Error: ", e)
 
 def verElementos():
     separador()
@@ -43,14 +48,19 @@ def verElementos():
     opVer = int(input("Selecciona una opción (1-4):"))
     separador()
     print("Ver todos los registros\n")
-    if opVer == 1:
-        verLibro()
-    elif opVer == 2:
-        verPeli()
-    elif opVer == 3:
-        verMusic()
-    elif opVer == 4:
-        main()
+    try:
+        if opVer == 1:
+            verLibro()
+        elif opVer == 2:
+            verPeli()
+        elif opVer == 3:
+            verMusic()
+        elif opVer == 4:
+            main()
+        else:
+            print("Opcion invalida")
+    except Exception as e:
+        print("Error: ", e)
 
 def buscarElemento():
     separador()
@@ -63,34 +73,38 @@ def buscarElemento():
     4. Regresar al Menu Principal"""
     print(opciones)
     opBuscar = int(input("Selecciona una opción (1-4):"))
-    if opBuscar == 1:
-        busTitulo()
-    elif opBuscar == 2:
-        busADA()
-    elif opBuscar == 3:
-        busGen()
-    elif opBuscar == 4:
-        main()
-    else:
-        print("Opcion inválida")
+    try:
+        if opBuscar == 1:
+            busTitulo()
+        elif opBuscar == 2:
+            busADA()
+        elif opBuscar == 3:
+            busGen()
+        elif opBuscar == 4:
+            main()
+        else:
+            print("Opcion inválida")
+    except Exception as e:
+        print("Error: ", e)
 
 def eliminarElemento():
     separador()
     print("       Eliminar Elemento")
     separador()
     print("¿Que deseas eliminar?")
-    opciones = """    1. Eliminar por Titulo
-    2. Eliminar por Identificador único
-    3. Regresar al Menu Principal"""
+    opciones = """    1. Eliminar por Identificador único(Titulo)
+    2. Regresar al Menu Principal"""
     print(opciones)
     opEliminar = int(input("Selecciona una opción (1-3):"))
-    if opEliminar == 1:
-        delNombre()
-    
-    elif opEliminar == 3:
-        main()
-    else:
-        print("Opción inválida")
+    try:
+        if opEliminar == 1:
+            delNombre()
+        elif opEliminar == 2:
+            main()
+        else:
+            print("Opción inválida")
+    except Exception as e:
+        print("Error: ", e)
 
 def elementoXcategoria():
     separador()
@@ -107,54 +121,43 @@ def elementoXcategoria():
         return(opCategoria)
     except Exception:
         print("Opción inválida")
-
-def guardarCargar():
-    separador()
-    print("       Guardar y Cargar Colección")
-    separador()
-    print("¿Que deseas hacer")
-    opciones = """    1. Guardar la Colección Actual
-    2. Cargar una colección Guardada
-    3. Regresar al Menu Principal"""
-    print(opciones)
-    opCategoria = int(input("Selecciona una opción (1-3):"))
     
-
 def main():
-    separador()
-    print("       Administrador de coleccion")
-    separador()
-    opcionesMenu()
-    separador()
-    op = opc()
     while True:
-        if op == 1:
-            print("")
-            nuevoElemento()
-        elif op == 2:
-            print("")
-            verElementos()
-        elif op == 3:
-            print("")
-            buscarElemento()
-        elif op == 4:
-            print("")
-            editarElemento()
-        elif op == 5:
-            print("")
-            eliminarElemento()
-        elif op == 6:
-            print("")
-            elementoXcategoria()
-        elif op == 7:
-            print("")
-            guardarCargar()
-        elif op == 8:
-            break
-        else:
-            print("")
-            print("Opción inválida")
-            main()
+        try:
+            separador()
+            print("       Administrador de coleccion")
+            separador()
+            opcionesMenu()
+            separador() 
+            op = opc()
+            if op == 1:
+                print("")
+                nuevoElemento()
+            elif op == 2:
+                print("")
+                verElementos()
+            elif op == 3:
+                print("")
+                buscarElemento()
+            elif op == 4:
+                print("")
+                editarElemento()
+            elif op == 5:
+                print("")
+                eliminarElemento()
+            elif op == 6:
+                print("")
+                elementoXcategoria()
+            elif op == 7:
+                print("Saliendo del programa ...")
+                break
+            else:
+                print("")
+                print("Opción inválida")
+                main()
+        except Exception as e:
+            print("Error: ", e)
 
 main()    
 

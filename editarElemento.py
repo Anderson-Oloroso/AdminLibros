@@ -257,14 +257,17 @@ def editarElemento():
     print(opciones)
     opEditar= int(input("Selecciona una opción (1-5): "))
     
-    if opEditar == 1:
-        ediTitulo()
-    elif opEditar == 2:
-        editADA()
-    elif opEditar == 3:
-        editGen()
+    try:
+        if opEditar == 1:
+            ediTitulo()
+        elif opEditar == 2:
+            editADA()
+        elif opEditar == 3:
+            editGen()
 
-    elif opEditar == 5:
-        editarElemento()
-    else:
-        print("Opcion invalida")
+        elif opEditar == 5:
+            editarElemento()
+        else:
+            print("Opcion invalida")
+    except Exception as e:
+        print("Error: ", e)
