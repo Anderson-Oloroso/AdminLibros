@@ -27,9 +27,9 @@ def catLibro():
             if genero in dato['Genero'].lower():
                 print(f"Titulo: {dato['Titulo']}\nAutor: {dato['Autor']}\nValoracion: {dato['Valoracion']}\n")
     elif op == 3:
-        valoracion = input("Valoracion: ").strip()
+        valoracion = float(input("Valoracion: "))
         for dato in datos:
-            if valoracion in dato['Valoracion']:
+            if float(dato['Valoracion']) == valoracion:
                 print(f"Titulo: {dato['Titulo']}\nGénero: {dato['Genero']}\nAutor: {dato['Autor']}\n")
     else:
         print("Opcion invalida")

@@ -3,13 +3,13 @@
         "Titulo": "El Conde de Montecristo",
         "Autor": "Alejandro",
         "Genero": "Venganza",
-        "Valoracion": 8
+        "Valoracion": 8.0
     },
     {
         "Titulo": "Luna",
         "Autor": "Gram",
         "Genero": "Novela",
-        "Valoracion:": 9
+        "Valoracion:": 9.0
     },
     {
         "Titulo": "El faro del fin del mundo",
