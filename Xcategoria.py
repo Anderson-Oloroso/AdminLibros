@@ -30,8 +30,8 @@ def catLibro():
         valoracion = float(input("Valoracion: "))
         for dato in datos:
             
-            if dato[3] == valoracion:
-                print(dato[3])
+            if dato['Valoracion'] == valoracion:
+                print(dato['Valoracion'])
                 print(f"Titulo: {dato['Titulo']}\nGénero: {dato['Genero']}\nAutor: {dato['Autor']}\n")
     else:
         print("Opcion invalida")
