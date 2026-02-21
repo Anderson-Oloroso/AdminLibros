@@ -3,7 +3,7 @@ import json
 def catLibro():
     mensaje = '''  1. Por Autor
     2. Por Genero
-    3. Por puntuación
+    3. Por Valoracion
     4. Volver
     '''
 
@@ -17,7 +17,7 @@ def catLibro():
         existe = False
         for dato in datos:
             if autor in dato['Autor'].lower():
-                print(f"\nTitulo: {dato['Titulo']}\nGénero: {dato['Genero']}\nPuntuación: {dato['Puntuacion']}\n")
+                print(f"\nTitulo: {dato['Titulo']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
                 existe = True
         if not existe:
             print("No hay coincidencias")
@@ -25,11 +25,11 @@ def catLibro():
         genero = input("Genero: ").strip().lower()
         for dato in datos:
             if genero in dato['Genero'].lower():
-                print(f"Titulo: {dato['Titulo']}\nAutor: {dato['Autor']}\nPuntuacion: {dato['Puntuacion']}\n")
+                print(f"Titulo: {dato['Titulo']}\nAutor: {dato['Autor']}\nValoracion: {dato['Valoracion']}\n")
     elif op == 3:
-        puntuacion = input("Puntuacion: ").strip()
+        valoracion = input("Valoracion: ").strip()
         for dato in datos:
-            if puntuacion in dato['Puntuacion'].lower():
+            if valoracion in dato['Valoracion'].lower():
                 print(f"Titulo: {dato['Titulo']}\nGénero: {dato['Genero']}\nAutor: {dato['Autor']}\n")
     else:
         print("Opcion invalida")
@@ -40,7 +40,7 @@ def catPeli():
     
     mensaje = '''  1. Por Director
     2. Por Genero
-    3. Por puntiación
+    3. Por Valoracion
     4. Volver
     '''
 
@@ -55,7 +55,7 @@ def catMusic():
     
     mensaje = '''  1. Por Artista
     2. Por Genero
-    3. Por puntiación
+    3. Por Valoracion
     4. Volver
     '''
 

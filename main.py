@@ -155,8 +155,11 @@ def main():
                 print("")
                 eliminarElemento()
             elif op == 6:
-                print("")
-                elementoXcategoria()
+                try:
+                    print("")
+                    elementoXcategoria()
+                except Exception as e:
+                    print("Error: ", e)
             elif op == 7:
                 print("Saliendo del programa ...")
                 break
