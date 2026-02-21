@@ -29,7 +29,9 @@ def catLibro():
     elif op == 3:
         valoracion = float(input("Valoracion: "))
         for dato in datos:
-            if float(dato['Valoracion']) == valoracion:
+            
+            if dato[3] == valoracion:
+                print(dato[3])
                 print(f"Titulo: {dato['Titulo']}\nGénero: {dato['Genero']}\nAutor: {dato['Autor']}\n")
     else:
         print("Opcion invalida")
