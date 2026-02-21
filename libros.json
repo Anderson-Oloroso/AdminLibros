@@ -16,5 +16,11 @@
         "Autor": "Julio Verne",
         "Genero": "Ficcion",
         "Valoracion": 9.0
+    },
+    {
+        "Titulo": "100 a\u00f1os de soledad",
+        "Autor": "Gabriel Garcia",
+        "Genero": "Naturalismo",
+        "Valoracion": 8.9
     }
 ]
