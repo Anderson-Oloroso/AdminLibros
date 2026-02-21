@@ -3,12 +3,12 @@
         "Titulo": "Mundo Jurasico",
         "Director": "Vin Diesel",
         "Genero": "Ciencia Ficcion",
-        "Valoracion": 9
+        "Valoracion": 9.0
     },
     {
         "Titulo": "Ready Player One",
         "Director": "Saber",
         "Genero": "Ciencia Ficcion",
-        "Valoracion": 9
+        "Valoracion": 9.0
     }
 ]

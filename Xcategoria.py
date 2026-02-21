@@ -39,11 +39,12 @@ def catLibro():
         separador()
         for dato in datos:
             if dato['Valoracion'] == valoracion:
-                print(dato['Valoracion'])
                 print(f"Titulo: {dato['Titulo']}\nGénero: {dato['Genero']}\nAutor: {dato['Autor']}\n")
                 existe = True
         if not existe:
             print("Valoracion no encontrada")
+    elif op == 4:
+        return
     else:
         separador()
         print("Opcion invalida")
@@ -65,12 +66,15 @@ def catPeli():
     op = int(input("Ingrese una opcion: "))
     if op == 1:
         separador()
-        autor = input("Director: ").strip().lower()
+        director = input("Director: ").strip().lower()
         separador()
         for dato in datos:
-            if autor in dato['Director'].lower():
-                print(f"\nTitulo: {dato['Titulo']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
-                existe = True
+            if director in dato['Director'].lower():
+                try:
+                    print(f"\nTitulo: {dato['Titulo']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
+                    existe = True
+                except Exception as e:
+                    print(e)
         if not existe:
             print("Director no encontrado")
     elif op == 2:
@@ -79,7 +83,7 @@ def catPeli():
         separador()
         for dato in datos:
             if genero in dato['Genero'].lower():
-                print(f"Titulo: {dato['Titulo']}\nAutor: {dato['Autor']}\nValoracion: {dato['Valoracion']}\n")
+                print(f"Titulo: {dato['Titulo']}\nDirector: {dato['Director']}\nValoracion: {dato['Valoracion']}\n")
                 existe = True
         if not existe:
             print("Genero no encontrado")
@@ -89,25 +93,22 @@ def catPeli():
         separador()
         for dato in datos:
             if dato['Valoracion'] == valoracion:
-                print(dato['Valoracion'])
-                print(f"Titulo: {dato['Titulo']}\nGénero: {dato['Genero']}\nAutor: {dato['Autor']}\n")
+                print(f"Titulo: {dato['Titulo']}\nGénero: {dato['Genero']}\nDirector: {dato['Director']}\n")
                 existe = True
         if not existe:
             print("Valoracion no encontrada")
+    elif op == 4:
+        return
     else:
-        separador()
+        separador
         print("Opcion invalida")
 
 def catMusic():
-    with open("musicas.json", "r") as f:
-        datos = json.load(f)
-    
     mensaje = '''  1. Por Artista
     2. Por Genero
     3. Por Valoracion
     4. Volver
     '''
-
     print(mensaje)
     with open("musicas.json", "r") as f:
         datos = json.load(f)
@@ -116,10 +117,10 @@ def catMusic():
     op = int(input("Ingrese una opcion: "))
     if op == 1:
         separador()
-        autor = input("Artista: ").strip().lower()
+        artista = input("Artista: ").strip().lower()
         separador()
         for dato in datos:
-            if autor in dato['Artista'].lower():
+            if artista in dato['Artista'].lower():
                 print(f"\nTitulo: {dato['Titulo']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
                 existe = True
         if not existe:
@@ -130,7 +131,7 @@ def catMusic():
         separador()
         for dato in datos:
             if genero in dato['Genero'].lower():
-                print(f"Titulo: {dato['Titulo']}\nAutor: {dato['Autor']}\nValoracion: {dato['Valoracion']}\n")
+                print(f"Titulo: {dato['Titulo']}\nArtista: {dato['Artista']}\nValoracion: {dato['Valoracion']}\n")
                 existe = True
         if not existe:
             print("Genero no encontrado")
@@ -140,8 +141,13 @@ def catMusic():
         separador()
         for dato in datos:
             if dato['Valoracion'] == valoracion:
-                print(dato['Valoracion'])
-                print(f"Titulo: {dato['Titulo']}\nGénero: {dato['Genero']}\nAutor: {dato['Autor']}\n")
+                print(f"Titulo: {dato['Titulo']}\nGénero: {dato['Genero']}\nArtista: {dato['Artista']}\n")
                 existe = True
         if not existe:
             print("Valoracion no encontrada")
+    elif op == 4:
+        return
+    else:
+        separador()
+        print("Opcion invalida")
+        

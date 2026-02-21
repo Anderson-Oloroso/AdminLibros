@@ -121,9 +121,11 @@ def elementoXcategoria():
         if opCategoria == 1:
             catLibro()
         elif opCategoria == 2:
-            catMusic()
-        elif opCategoria == 3:
             catPeli()
+        elif opCategoria == 3:
+            catMusic()
+        elif opCategoria == 4:
+            main()
         else:
             print("Opcion invalida")
             

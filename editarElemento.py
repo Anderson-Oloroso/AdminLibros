@@ -235,7 +235,7 @@ def editVal():
         for i, dato in enumerate(datos):
             if titulo in dato['Titulo'].lower():
                 print(f"\nMusica encontrada encontrado.")
-                nuevo = input("Nueva valoracion para el libro: ")
+                nuevo = float(input("Nueva valoracion para el libro: "))
                 dato['Valoracion'] = nuevo
         
         with open("musicas.json", "w") as f:
@@ -264,7 +264,8 @@ def editarElemento():
             editADA()
         elif opEditar == 3:
             editGen()
-
+        elif opEditar == 4:
+            editVal()
         elif opEditar == 5:
             editarElemento()
         else:
