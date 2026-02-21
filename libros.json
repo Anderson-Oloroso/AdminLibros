@@ -3,7 +3,7 @@
         "Titulo": "El Conde de Montecristo",
         "Autor": "Alejandro",
         "Genero": "Venganza",
-        "Valoracion": 8.0
+        "Valoracion": "10"
     },
     {
         "Titulo": "Luna",
@@ -22,5 +22,11 @@
         "Autor": "Gabriel Garcia",
         "Genero": "Naturalismo",
         "Valoracion": 8.9
+    },
+    {
+        "Titulo": "La vuelta al mundo en 80 dias",
+        "Autor": "Julio Verne",
+        "Genero": "Ficcion",
+        "Valoracion": 10.0
     }
 ]

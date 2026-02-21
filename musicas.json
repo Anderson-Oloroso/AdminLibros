@@ -4,5 +4,11 @@
         "Artista": "Rafa Espino",
         "Genero": "Rap",
         "Valoracion": 9
+    },
+    {
+        "Titulo": "Andromeda",
+        "Artista": "Rafa Espino, Droow",
+        "Genero": "Rap",
+        "Valoracion": 9
     }
 ]

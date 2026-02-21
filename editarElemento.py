@@ -201,7 +201,7 @@ def editVal():
         for i, dato in enumerate(datos):
             if titulo in dato['Titulo'].lower():
                 print(f"\nLibro encontrado.")
-                nuevo = input("Nueva valoracion para el libro: ")
+                nuevo = float(input("Nueva valoracion para el libro: "))
                 dato['Valoracion'] = nuevo
                 break
         
@@ -218,7 +218,7 @@ def editVal():
         for i, dato in enumerate(datos):
             if titulo in dato['Titulo'].lower():
                 print(f"\nPelicula encontrada.")
-                nuevo = input("Nueva valoracion para la pelicula: ")
+                nuevo = float(input("Nueva valoracion para la pelicula: "))
                 dato['Valoracion'] = nuevo
                 break
 
