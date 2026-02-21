@@ -3,7 +3,7 @@
         "Titulo": "El Conde de Montecristo",
         "Autor": "Alejandro",
         "Genero": "Venganza",
-        "Valoracion": "10"
+        "Valoracion": 10.0
     },
     {
         "Titulo": "Luna",
