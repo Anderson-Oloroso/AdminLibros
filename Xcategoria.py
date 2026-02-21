@@ -29,7 +29,7 @@ def catLibro():
     elif op == 3:
         valoracion = input("Valoracion: ").strip()
         for dato in datos:
-            if valoracion in dato['Valoracion'].lower():
+            if valoracion in dato['Valoracion']:
                 print(f"Titulo: {dato['Titulo']}\nGénero: {dato['Genero']}\nAutor: {dato['Autor']}\n")
     else:
         print("Opcion invalida")
