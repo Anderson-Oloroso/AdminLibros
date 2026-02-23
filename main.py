@@ -20,8 +20,8 @@ def nuevoElemento():
     opNuevo = int(input("Selecciona una opción (1-4): "))
 
     separador()
-    print("Agregar un nuevo elemento\n")
     try: 
+        print("Agregar un nuevo elemento\n")
         if opNuevo == 1:
             addLibro()
         elif opNuevo == 2:
@@ -87,6 +87,35 @@ def buscarElemento():
     except Exception as e:
         print("Error: ", e)
 
+def editElemento():
+    separador()
+    print("       Editar Elemento")
+    separador()
+    print("¿Qué tipo de cambio deseas realizar?")
+    opciones = """    1. Editar Titulo
+    2. Editar Autor/Director/Artista
+    3. Editar Genero
+    4. Editar Valoracion
+    5. Regresar al Menu Principal"""
+    print(opciones)
+    opEditar= int(input("Selecciona una opción (1-5): "))
+    
+    try:
+        if opEditar == 1:
+            ediTitulo()
+        elif opEditar == 2:
+            editADA()
+        elif opEditar == 3:
+            editGen()
+        elif opEditar == 4:
+            editVal()
+        elif opEditar == 5:
+            main()    
+        else:
+            print("Opcion invalida")
+    except Exception as e:
+        print("Error: ", e)
+
 def eliminarElemento():
     separador()
     print("       Eliminar Elemento")
@@ -95,7 +124,7 @@ def eliminarElemento():
     opciones = """    1. Eliminar por Identificador único(Titulo)
     2. Regresar al Menu Principal"""
     print(opciones)
-    opEliminar = int(input("Selecciona una opción (1-3):"))
+    opEliminar = int(input("Selecciona una opción (1-2):"))
     try:
         if opEliminar == 1:
             delNombre()
@@ -152,7 +181,7 @@ def main():
                 buscarElemento()
             elif op == 4:
                 print("")
-                editarElemento()
+                editElemento()
             elif op == 5:
                 print("")
                 eliminarElemento()
@@ -168,6 +197,9 @@ def main():
                 main()
         except Exception as e:
             print("Error: ", e)
+        if op == 7:
+            print("Saliendo del programa ...")
+            break
 
 main()    
 

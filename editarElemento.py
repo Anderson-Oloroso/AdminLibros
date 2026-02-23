@@ -175,8 +175,9 @@ def editGen():
         for i, dato in enumerate(datos):
             if titulo in dato['Genero'].lower():
                 print(f"\nGenero encontrado.")
-                nuevo = input("Ingerse el nuevo Artista para el libro: ")
+                nuevo = input("Ingerse el nuevo Genero para la pelicula: ")
                 dato['Genero'] = nuevo
+                break
         
         with open("musicas.json", "w") as f:
             json.dump(datos, f, indent=4)
@@ -237,38 +238,10 @@ def editVal():
                 print(f"\nMusica encontrada encontrado.")
                 nuevo = float(input("Nueva valoracion para el libro: "))
                 dato['Valoracion'] = nuevo
+                break
         
         with open("musicas.json", "w") as f:
             json.dump(datos, f, indent=4)
             print("Musica modificada correctamente")
     else:
         print("Opcion invalida")
-
-def editarElemento():
-    separador()
-    print("       Editar Elemento")
-    separador()
-    print("¿Qué tipo de cambio deseas realizar?")
-    opciones = """    1. Editar Titulo
-    2. Editar Autor/Director/Artista
-    3. Editar Genero
-    4. Editar Valoracion
-    5. Regresar al Menu Principal"""
-    print(opciones)
-    opEditar= int(input("Selecciona una opción (1-5): "))
-    
-    try:
-        if opEditar == 1:
-            ediTitulo()
-        elif opEditar == 2:
-            editADA()
-        elif opEditar == 3:
-            editGen()
-        elif opEditar == 4:
-            editVal()
-        elif opEditar == 5:
-            editarElemento()
-        else:
-            print("Opcion invalida")
-    except Exception as e:
-        print("Error: ", e)

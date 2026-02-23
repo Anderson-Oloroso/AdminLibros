@@ -6,7 +6,7 @@
         "Valoracion": 10.0
     },
     {
-        "Titulo": "Luna",
+        "Titulo": "Luna de Xelaj\u00fa",
         "Autor": "Gram",
         "Genero": "Novela",
         "Valoracion": 9.0
@@ -27,6 +27,12 @@
         "Titulo": "La vuelta al mundo en 80 dias",
         "Autor": "Julio Verne",
         "Genero": "Ficcion",
+        "Valoracion": 10.0
+    },
+    {
+        "Titulo": "El secreto mas grande del mundo",
+        "Autor": "Og Mandino",
+        "Genero": "Realismo",
         "Valoracion": 10.0
     }
 ]

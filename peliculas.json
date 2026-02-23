@@ -15,6 +15,12 @@
         "Titulo": "Invicto",
         "Director": "Skot Adkins",
         "Genero": "Lucha",
-        "Valoracion": 10
+        "Valoracion": 10.0
+    },
+    {
+        "Titulo": "La Gran Muralla China",
+        "Director": "Xhian Chi",
+        "Genero": "Ficcion",
+        "Valoracion": 10.0
     }
 ]

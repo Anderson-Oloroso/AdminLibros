@@ -1,14 +1,20 @@
 [
     {
-        "Titulo": "Tu momento",
+        "Titulo": "Antes de Partir",
         "Artista": "Rafa Espino",
-        "Genero": "Rap",
-        "Valoracion": 9
+        "Genero": "Hip Hop",
+        "Valoracion": 9.0
     },
     {
         "Titulo": "Andromeda",
         "Artista": "Rafa Espino, Droow",
-        "Genero": "Rap",
-        "Valoracion": 9
+        "Genero": "Hip Hop",
+        "Valoracion": 9.0
+    },
+    {
+        "Titulo": "Unity",
+        "Artista": "TheFatRat",
+        "Genero": "Electronica",
+        "Valoracion": 10.0
     }
 ]

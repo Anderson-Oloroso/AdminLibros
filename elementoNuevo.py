@@ -34,7 +34,7 @@ def addPeli():
     titulo = input("Título de la pelicula: ")
     director = input("Director: ")
     genero = input("Género: ")
-    val = int(input("Valoracion: "))
+    val = float(input("Valoracion: "))
     
     nuevoLibro = {
         "Titulo": titulo,
@@ -61,7 +61,7 @@ def addMusic():
     titulo = input("Título de la musica: ")
     artista = input("Artista: ")
     genero = input("Género: ")
-    val = int(input("Valoracion: "))
+    val = float(input("Valoracion: "))
 
     nuevoLibro = {
         "Titulo": titulo,
