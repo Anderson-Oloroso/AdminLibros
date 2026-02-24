@@ -1,3 +1,4 @@
+import os
 from menu import *
 from json import *
 from elementoNuevo import *
@@ -190,7 +191,7 @@ def main():
                 elementoXcategoria()
             elif op == 7:
                 print("Saliendo del programa ...")
-                break
+                os._exit(0)
             else:
                 print("")
                 print("Opción inválida")
