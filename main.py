@@ -47,8 +47,8 @@ def verElementos():
     print(opciones)
     opVer = int(input("Selecciona una opción (1-4):"))
     separador()
-    print("Ver todos los registros\n")
     try:
+        print("Ver todos los registros\n")
         if opVer == 1:
             verLibro()
         elif opVer == 2:
@@ -194,12 +194,8 @@ def main():
             else:
                 print("")
                 print("Opción inválida")
-                main()
         except Exception as e:
             print("Error: ", e)
-        if op == 7:
-            print("Saliendo del programa ...")
-            break
 
 main()    
 

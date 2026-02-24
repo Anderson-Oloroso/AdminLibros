@@ -2,12 +2,12 @@ import json
 from menu import separador
 
 def catLibro():
-    mensaje = '''  1. Por Autor
+    mensaje = '''   1. Por Autor
     2. Por Genero
     3. Por Valoracion
     4. Volver
     '''
-
+    separador()
     print(mensaje)
     with open("libros.json", "r") as f:
         datos = json.load(f)
@@ -50,13 +50,12 @@ def catLibro():
         print("Opcion invalida")
 
 def catPeli():
-    
     mensaje = '''  1. Por Director
     2. Por Genero
     3. Por Valoracion
     4. Volver
     '''
-
+    separador()
     print(mensaje)
 
     with open("peliculas.json", "r") as f:
@@ -70,11 +69,8 @@ def catPeli():
         separador()
         for dato in datos:
             if director in dato['Director'].lower():
-                try:
-                    print(f"\nTitulo: {dato['Titulo']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
-                    existe = True
-                except Exception as e:
-                    print(e)
+                print(f"\nTitulo: {dato['Titulo']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
+                existe = True
         if not existe:
             print("Director no encontrado")
     elif op == 2:
@@ -107,8 +103,8 @@ def catMusic():
     mensaje = '''  1. Por Artista
     2. Por Genero
     3. Por Valoracion
-    4. Volver
-    '''
+    4. Volver'''
+    separador()
     print(mensaje)
     with open("musicas.json", "r") as f:
         datos = json.load(f)

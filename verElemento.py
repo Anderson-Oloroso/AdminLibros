@@ -19,4 +19,4 @@ def verMusic():
         datos = json.load(f)
     
     for dato in datos:
-        print(f"Titulo: {dato['Titulo']}\nArtista: {dato['Artista']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}")
+        print(f"Titulo: {dato['Titulo']}\nArtista: {dato['Artista']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")

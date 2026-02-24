@@ -11,7 +11,8 @@ def busTitulo():
     
     for dato in datos:
         if titulo in dato['Titulo'].lower():
-            
+            separador()
+            print("Libro encontrado")
             print(f"\nTitulo: {dato['Titulo']}\nAutor: {dato['Autor']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
 
     with open("peliculas.json", "r") as f:
@@ -19,6 +20,8 @@ def busTitulo():
     
     for dato in datos:
         if titulo in dato['Titulo'].lower():
+            separador()
+            print("Pelicula encontrada")
             print(f"\nTitulo: {dato['Titulo']}\nDirector: {dato['Director']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
 
     with open("musicas.json", "r") as f:
@@ -26,6 +29,8 @@ def busTitulo():
     
     for dato in datos:
         if titulo in dato['Titulo'].lower():
+            separador()
+            print("Musica encontrada")
             print(f"\nTitulo: {dato['Titulo']}\nArtista: {dato['Artista']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
 
 def busADA():
@@ -37,6 +42,8 @@ def busADA():
     
     for dato in datos:
         if nombre in dato['Autor'].lower():
+            separador()
+            print("Autor encontrado")
             print(f"\nTitulo: {dato['Titulo']}\nAutor: {dato['Autor']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
 
     with open("musicas.json", "r") as f:
@@ -44,6 +51,8 @@ def busADA():
     
     for dato in datos:
         if nombre in dato['Artista'].lower():
+            separador()
+            print("Artista encontrado")
             print(f"\nTitulo: {dato['Titulo']}\nAutor: {dato['Artista']}\nGénero: {dato['Genero']}\nValoracion:{dato['Valoracion']}\n")
 
     with open("peliculas.json", "r") as f:
@@ -51,6 +60,8 @@ def busADA():
     
     for dato in datos:
         if nombre in dato['Director'].lower():
+            separador()
+            print("Director encontrado")
             print(f"\nTitulo: {dato['Titulo']}\nAutor: {dato['Director']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
     
 def busGen():
@@ -62,6 +73,8 @@ def busGen():
     
     for dato in datos:
         if genero in dato['Genero'].lower():
+            separador()
+            print("Genero encontrado")
             print(f"\nTitulo: {dato['Titulo']}\nAutor: {dato['Autor']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
 
     with open("musicas.json", "r") as f:
@@ -69,6 +82,8 @@ def busGen():
     
     for dato in datos:
         if genero in dato['Genero'].lower():
+            separador()
+            print("Genero encontrado")
             print(f"\nTitulo: {dato['Titulo']}\nAutor: {dato['Artista']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
 
     with open("peliculas.json", "r") as f:
@@ -76,6 +91,8 @@ def busGen():
     
     for dato in datos:
         if genero in dato['Genero'].lower():
+            separador()
+            print("Genero encontrado")
             print(f"\nTitulo: {dato['Titulo']}\nAutor: {dato['Director']}\nGénero: {dato['Genero']}\nValoracion: {dato['Valoracion']}\n")
             
             

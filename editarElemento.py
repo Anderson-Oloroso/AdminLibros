@@ -6,9 +6,11 @@ def ediTitulo():
     2. Titulo de Pelicula
     3. Titulo Musica
     4. Volver"""
+    separador()
     print(mensaje)
 
     op = int(input("Ingrese su opcion: "))
+    separador()
     if op == 1:
         titulo = input("Título: ").lower().strip()
 
@@ -63,13 +65,15 @@ def ediTitulo():
         print("Opcion invalida")
 
 def editADA():
-    mensaje = """ 1.Autor de Libro
+    mensaje = """   1.Autor de Libro
     2. Autor de Pelicula
     3. Autor Musica
     4. Volver"""
+    separador()
     print(mensaje)
 
     op = int(input("Ingrese su opcion: "))
+    separador()
     if op == 1:
         titulo = input("Autor: ").lower().strip()
 
@@ -125,13 +129,15 @@ def editADA():
         print("Opcion invalida")
 
 def editGen():
-    mensaje = """ 1.Genero de Libro
+    mensaje = """   1.Genero de Libro
     2. Genero de Pelicula
     3. Genero Musica
     4. Volver"""
+    separador()
     print(mensaje)
 
     op = int(input("Ingrese su opcion: "))
+    separador()
     if op == 1:
         titulo = input("Género: ").lower().strip()
 
@@ -186,13 +192,15 @@ def editGen():
         print("Opcion invalida")
 
 def editVal():
-    mensaje = """ 1.Valoracion de Libro
+    mensaje = """   1.Valoracion de Libro
     2. Valoracion de Pelicula
     3. Valoracion Musica
     4. Volver"""
+    separador()
     print(mensaje)
 
     op = int(input("Ingrese su opcion: "))
+    separador()
     if op == 1:
         titulo = input("Libro a Valorar: ").lower().strip()
 
