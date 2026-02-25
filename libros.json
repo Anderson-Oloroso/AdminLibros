@@ -1,11 +1,5 @@
 [
     {
-        "Titulo": "El Conde de Montecristo",
-        "Autor": "Alejandro",
-        "Genero": "Venganza",
-        "Valoracion": 10.0
-    },
-    {
         "Titulo": "Luna de Xelaj\u00fa",
         "Autor": "Gram",
         "Genero": "Novela",
@@ -34,5 +28,11 @@
         "Autor": "Og Mandino",
         "Genero": "Realismo",
         "Valoracion": 10.0
+    },
+    {
+        "Titulo": "El Conde de Montecristo",
+        "Autor": "Alejandro",
+        "Genero": "Ficcion",
+        "Valoracion": 9.0
     }
 ]
