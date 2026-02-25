@@ -34,5 +34,11 @@
         "Autor": "Alejandro",
         "Genero": "Ficcion",
         "Valoracion": 9.0
+    },
+    {
+        "Titulo": "Mas all\u00e1 del Everest",
+        "Autor": "Jaime Vi\u00f1als",
+        "Genero": "Aventura",
+        "Valoracion": 8.8
     }
 ]

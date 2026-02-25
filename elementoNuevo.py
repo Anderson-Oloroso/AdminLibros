@@ -19,7 +19,7 @@ def addLibro():
         datos = json.load(file)
 
         for dato in datos:
-            if titulo.lower() in dato['Titulo'].lower() and autor.lower in dato['Autor']:
+            if titulo.lower() in dato['Titulo'].lower() and autor.lower() in dato['Autor'].lower():
                 encontrado = True
                 break
     
@@ -27,14 +27,14 @@ def addLibro():
         separador()
         print("El libro que intenta agregar ya existe\n")
     else:
-        dato.append(nuevoLibro)
+        datos.append(nuevoLibro)
         with open("libros.json", "w") as f:
             try:
                 json.dump(datos, f, indent=4)
             except Exception as e:
                  print("Error: ", e)
             else:
-                print("\nelicula agregada correctamente")
+                print("\nLibro agregado correctamente")
 
 def addPeli():
     separador()
@@ -68,7 +68,7 @@ def addPeli():
             except Exception as e:
                  print("Error: ", e)
             else:
-                print("Pelicula agregada correctamente\n")
+                print("\nPelicula agregada correctamente")
 
 def addMusic():
     separador()
@@ -93,7 +93,7 @@ def addMusic():
     
     if encontrado:
         separador()
-        print("La música que intenta agregar ya existe")
+        print("La música que intenta agregar ya existe\n")
     else:
         datos.append(nuevaMusica)
         with open("musicas.json", "w") as f:
@@ -102,4 +102,4 @@ def addMusic():
             except Exception as e:
                  print("Error: ", e)
             else:
-                print("Pelicula agregada correctamente\n")
+                print("\nPelicula agregada correctamente")
