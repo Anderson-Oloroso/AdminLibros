@@ -9,9 +9,10 @@ def opcionesMenu():
         4. Editar un Elemento
         5. Eliminar un Elemento
         6. Ver Elementos por Categoría
-        7. Salir"""
+        7. Reporte por género
+        8. Salir"""
     print(menu)
 
 def opc():
-    op = int(input("Selecciona una opción (1-7): "))
+    op = int(input("Selecciona una opción (1-8): "))
     return op

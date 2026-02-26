@@ -7,6 +7,7 @@ from editarElemento import *
 from buscarElemento import *
 from eliminarElemento import *
 from Xcategoria import *
+from reporteGen import reporte_por_genero
 
 def nuevoElemento():
     separador()
@@ -190,6 +191,8 @@ def main():
                 print("")
                 elementoXcategoria()
             elif op == 7:
+                reporte_por_genero()
+            elif op == 8:
                 print("Saliendo del programa ...")
                 os._exit(0)
             else:
