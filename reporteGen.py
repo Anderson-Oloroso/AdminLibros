@@ -1,35 +1,24 @@
 import json
-from menu import separador
 
-def reporte_por_genero():
-    separador()
-    with open("libros.json", "r") as file:
-        datos = json.load(file)
-        
-        elemntos = len(datos)
-        separador()
-        for dato in datos:
-            if dato['Genero']:
-                print(dato['Genero'])
-                print(f"\nTitulo: {dato['Titulo']}\nAutor: {dato['Autor']}\nValoracion: {dato['Valoracion']}\n")
+def reporte_por_genero(clave_genero="genero"):
 
-    with open("musicas.json", "r") as file2:
-        datos2 = json.load(file2)
-        elemntos = len(datos2)
-        print(elemntos)
-        separador()
-        for dato in datos:
-            if dato['Genero']:
-                print(dato['Genero'])
-                print(f"\nTitulo: {dato['Titulo']}\nAutor: {dato['Autor']}\nValoracion: {dato['Valoracion']}\n")
+    contador = 0
 
-    with open("peliculas.json", "r") as file3:
-        datos3 = json.load(file3)
-        print(elemntos)
-        print("Elementos",elemntos)
-        separador()
-        for dato in datos:
-            elemntos = len(datos3)
-            if dato['Genero']:
-                print(dato['Genero'])
-                print(f"\nTitulo: {dato['Titulo']}\nAutor: {dato['Autor']}\nValoracion: {dato['Valoracion']}\n")
+    with open("libros.json", "r") as f:
+        datos = json.load(f)  
+
+        for item in datos:
+            genero = item.get(clave_genero) 
+            nombre = item['Genero']  
+            if genero:  
+                contador[genero] += 1
+                nuevo ={
+                    nombre:{
+                        "Titulo": item['Titulo'],
+                        "Autor": item['Autor'],
+                        "Valoracion": item['Valoracion']
+                    }
+                }
+    
+    with open("reporte_generos.json", "w") as file:
+        file.append(nuevo)
